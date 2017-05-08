@@ -1,0 +1,59 @@
+intranet@mob01:~/gitprojects/grid-81$ ./solve-grid-81.pl 
+---------------------
+Solve grid-81
+---------------------
+
+GRIDS: 1.Load 2.New 3.Save 4.Print  DO: 5.Auto-solve 6.Combine 7.Exclude  UNITS: 8.Print  9.EXIT    Select: 1
+   0. grid.24.9-6---1-4.txt
+   99. Cancel    Select: 0
+
+GRIDS: 1.Load 2.New 3.Save 4.Print  DO: 5.Auto-solve 6.Combine 7.Exclude  UNITS: 8.Print  9.EXIT    Select: 4
+
+
+  - - - - - - - - - - - -         Valid symbols: 123456789
+ |   1   |   3   |   7   |
+ | 4     |       |     3 |
+ |     5 |   9   | 8     |
+  - - - - - - - - - - - -
+ |       | 7   3 |       |
+ | 9   6 |       | 1   4 |
+ |       | 6   9 |       |
+  - - - - - - - - - - - -
+ |     8 |   6   | 3     |
+ | 1     |       |     2 |
+ |   3   |   8   |   6   |
+  - - - - - - - - - - - -
+
+>> LOAD: grid.24.9-6---1-4.txt
+
+GRIDS: 1.Load 2.New 3.Save 4.Print  DO: 5.Auto-solve 6.Combine 7.Exclude  UNITS: 8.Print  9.EXIT    Select: 5
+
+...
+
+
+  - - - - - - - - - - - -         Valid symbols: 123456789
+ | 6 1 9 | 8 3 2 | 4 7 5 |
+ | 4 8 7 | 1 5 6 | 2 9 3 |
+ | 3 2 5 | 4 9 7 | 8 1 6 |
+  - - - - - - - - - - - -
+ | 8 5 1 | 7 4 3 | 6 2 9 |
+ | 9 7 6 | 5 2 8 | 1 3 4 |
+ | 2 4 3 | 6 1 9 | 7 5 8 |
+  - - - - - - - - - - - -
+ | 5 9 8 | 2 6 1 | 3 4 7 |
+ | 1 6 4 | 3 7 5 | 9 8 2 |
+ | 7 3 2 | 9 8 4 | 5 6 1 |
+  - - - - - - - - - - - -
+
+>> LOAD: grid.24.9-6---1-4.txt
+>> Start auto-loop
+>> Run:1 -combine- score=11 total=35
+>> Run:2 -combine- score=20 total=55
+>> Run:3 -exclude- score=6 total=61
+>> Run:4 -combine- score=18 total=79
+>> Run:5 -combine- score=2 total=81
+>> Ready auto-loop
+
+GRIDS: 1.Load 2.New 3.Save 4.Print  DO: 5.Auto-solve 6.Combine 7.Exclude  UNITS: 8.Print  9.EXIT    Select: 9
+intranet@mob01:~/gitprojects/grid-81$ 
+

@@ -179,10 +179,6 @@ sub load_grid {
    @runlog = (); 
    push(@runlog,"LOAD: $filename");
    print_grid;
-   print_grid;
-   print_grid;
-   print_grid;
-   print_grid;
 }
 
 sub readgrid {
@@ -232,7 +228,9 @@ sub save_grid {
 
 sub print_grid {
    system("clear");
-   print "\n  - - - - - - - - - - - -         Valid symbols: $symbols\n";
+   print "Valid symbols: $symbols\n";
+   print "Solved cells: ".solved_cells."\n";
+   print "\n  - - - - - - - - - - - -\n";
    for ($xstart = 0; $xstart < 9; $xstart += 3) {
       for ($x = $xstart; $x < $xstart + 3; $x++) {
          for ($ystart = 0; $ystart < 9; $ystart += 3) {

@@ -20,7 +20,7 @@ $count_runs = 0;
 @runlog = (); 
 
 @units = (
-   # cells (left to right, top to bottom)
+   # 3x3blocks (left to right, top to bottom)
    [ [0,0],[0,1],[0,2],[1,0],[1,1],[1,2],[2,0],[2,1],[2,2] ],
    [ [0,3],[0,4],[0,5],[1,3],[1,4],[1,5],[2,3],[2,4],[2,5] ],
    [ [0,6],[0,7],[0,8],[1,6],[1,7],[1,8],[2,6],[2,7],[2,8] ],
@@ -119,7 +119,7 @@ sub can {
 
 sub print_units{
    print " 0,0 .. 0,8\n";
-   print "   :    :  \n";
+   print "   :    :           0-8:3x3-blocks  9-17:columns  18-26:rows\n";
    print " 8,0 .. 8,8\n";
    print "Nr :  ---- Nine-unit positions (row,column) -----\n";
    for ($unit_index = 0; $unit_index <= $#units; $unit_index++) {
@@ -310,8 +310,8 @@ sub try_combine {
 
 ### MAIN ROUTINE ###
 while ( 1 == 1 ) {
-   print "\nGRIDS: 1.Load 2.New 3.Save 4.Print";
-   print "  DO: 5.Auto-solve 6.Combine 7.Exclude";
+   print "\nGRID: 1.Load 2.New 3.Save 4.Show";
+   print "  SOLVE: 5.Auto-solve 6.Combine 7.Exclude";
    print "  UNITS: 8.Print";
    print "  9.EXIT    Select: ";
    $line = <STDIN>;
